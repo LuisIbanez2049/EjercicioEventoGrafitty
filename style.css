@@ -1,0 +1,14 @@
+#styleGrafitty
+{
+    font-family: "Covered By Your Grace", cursive;
+   color: aqua;
+}
+#stylePoster
+{
+    font-family: "Share Tech Mono", monospace;
+    color: aqua;
+}
+span
+{
+    padding-right: 8px;
+}

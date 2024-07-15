@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl font-bold text-blue-400 text-center mt-10 underline">
+        Ejercicio Grafitty
+      </h1>
+    </header>
+
+    <main>
+        <div class="flex flex-row">
+            <section class="border border-black w-1/3 h-screen bg-[#DDDDDD] flex flex-col justify-center items-center">
+                <form action="" class="border border-black w-11/12 h-5/6 text-[25px] font-bold flex flex-col justify-center">
+                    <fieldset>
+                      <legend class="ml-12">Ingrese un texto</legend>
+                      <p class="mb-7 ml-12">
+                        <label for="texto">Texto</label>
+                        <input class="border border-black w-[70%]" type="text" id="texto">
+                      </p>
+                      <p class="mb-7 ml-12">
+                        <label for="colorInput">Ingresa un color:</label>
+                        <input type="color" id="colorInput" name="colorInput" placeholder="e.g., red, #ff0000" required>
+                      </p>
+                      <p class="ml-12">
+                        <input type="radio" id="option1" name="selection" value="opcion_1" required>
+                        <label for="option1">Grafitty</label><br>
+                      </p>
+                      <p class="mb-7 ml-12">
+                        <input type="radio" id="option2" name="selection" value="opcion_2" required>
+                        <label for="option2">Poster</label><br>
+                      </p>
+                    </fieldset>
+                    <div class="flex flex-row justify-center">
+                        <button class="border border-black w-[150px] h-[50px]">Submit</button>
+                    </div>
+                  </form>
+            </section>
+            <section class="border border-black w-2/3 h-screen bg-[#FDE4DE] flex flex-row justify-center items-center">
+                <div id="divwall" class="border border-black w-11/12 h-5/6 flex flex-row flex-wrap justify-evenly">
+                    <!-- Aqui van las cartas -->
+                </div>
+                
+            </section>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
